@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/love your soundtrack.ogg-0b5096273089457672202a665969665b.oggstr"
+
+[deps]
+
+source_file="res://Audio/love your soundtrack.ogg"
+dest_files=[ "res://.import/love your soundtrack.ogg-0b5096273089457672202a665969665b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

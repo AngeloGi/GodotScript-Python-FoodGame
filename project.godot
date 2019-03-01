@@ -1,0 +1,46 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Love_your_food"
+run/main_scene="res://LanguageSelect.tscn"
+config/icon="res://icon.png"
+config/auto_accept_quit=false
+config/quit_on_go_back=false
+
+[autoload]
+
+PlayerData="*res://PlayerData.gd"
+Settings="*res://Settings.gd"
+AudioManager="*res://AudioManager.tscn"
+
+[display]
+
+window/size/width=720
+window/size/height=1280
+window/size/resizable=false
+window/size/test_width=504
+window/size/test_height=896
+window/handheld/orientation="portrait"
+window/stretch/mode="2d"
+
+[locale]
+
+translations=PoolStringArray( "res://Fonts/Localization.en.translation", "res://Fonts/Localization.el.translation", "res://Fonts/Localization.de.translation" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,445 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://Stage/Stage.gd" type="Script" id=1]
+[ext_resource path="res://Art/InGame.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/Comic120.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/Comic72.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Art/Hit.png" type="Texture" id=5]
+[ext_resource path="res://Art/Heart.png" type="Texture" id=6]
+[ext_resource path="res://Art/MenuButton.png" type="Texture" id=7]
+[ext_resource path="res://Fonts/Comic48.tres" type="DynamicFont" id=8]
+
+[sub_resource type="StyleBoxFlat" id=1]
+
+bg_color = Color( 0.501961, 1, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_color = Color( 0.8, 0.8, 0.8, 0 )
+
+[sub_resource type="DynamicFontData" id=3]
+
+font_path = "res://Fonts/ComicRelief.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 72
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = false
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+
+size = 70
+outline_size = 3
+outline_color = Color( 0.290196, 0.290196, 0.290196, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=6]
+
+font_path = "res://Fonts/ComicRelief.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+
+size = 80
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
+
+size = 72
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+
+size = 72
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = false
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=10]
+
+font_path = "res://Fonts/ComicRelief.ttf"
+
+[sub_resource type="DynamicFont" id=11]
+
+size = 90
+outline_size = 3
+outline_color = Color( 0.00392157, 0, 0.172549, 1 )
+use_filter = false
+font_data = SubResource( 10 )
+
+[sub_resource type="DynamicFontData" id=12]
+
+font_path = "res://Fonts/ComicRelief.ttf"
+
+[sub_resource type="DynamicFont" id=13]
+
+size = 48
+outline_size = 2
+outline_color = Color( 0.752941, 0.282353, 0, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 12 )
+
+[sub_resource type="DynamicFont" id=14]
+
+size = 90
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 10 )
+
+[sub_resource type="DynamicFont" id=15]
+
+size = 72
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = false
+use_filter = false
+font_data = SubResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+
+bg_color = Color( 0, 0, 0, 0.701961 )
+border_color = Color( 1, 0, 0, 1 )
+border_blend = true
+
+[node name="Stage" type="Node"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ],
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="BreakTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="UpDown" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="StartTimer" type="Timer" parent="."]
+autostart = true
+
+[node name="TimeBar" type="ProgressBar" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -360.0
+margin_right = 358.0
+margin_bottom = 25.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+max_value = 2.0
+step = 0.001
+value = 2.0
+percent_visible = false
+
+[node name="Start" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 360, 300 )
+
+[node name="StartLabel" type="Label" parent="Start"]
+margin_left = -360.0
+margin_top = -65.0
+margin_right = 360.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 4 )
+align = 1
+valign = 1
+
+[node name="MyCanvas" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="MyCanvas"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = -2.0
+rect_clip_content = true
+mouse_filter = 2
+texture = ExtResource( 2 )
+
+[node name="PlayUI" type="Control" parent="MyCanvas"]
+editor/display_folded = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_right = -1.0
+
+[node name="MultiSprite" type="Sprite" parent="MyCanvas/PlayUI"]
+editor/display_folded = true
+position = Vector2( 360, 300 )
+
+[node name="Multiplier" type="Label" parent="MyCanvas/PlayUI/MultiSprite"]
+anchor_right = 1.0
+margin_left = -358.0
+margin_top = -85.0
+margin_right = 355.0
+margin_bottom = 82.0
+custom_fonts/font = ExtResource( 3 )
+text = "x10"
+align = 1
+valign = 1
+
+[node name="MultyRot" type="Timer" parent="MyCanvas/PlayUI/MultiSprite"]
+wait_time = 0.5
+
+[node name="Eat" type="Button" parent="MyCanvas/PlayUI"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = 60.0
+margin_right = 200.0
+margin_bottom = 460.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="Eat" type="Label" parent="MyCanvas/PlayUI/Eat"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -44.0
+margin_top = -50.0
+margin_right = 69.0
+margin_bottom = -352.0
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0.313726, 0.662745, 1, 1 )
+text = "EAT"
+align = 1
+
+[node name="Hit" type="Button" parent="MyCanvas/PlayUI"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -93.0
+margin_top = -213.0
+margin_right = 182.0
+margin_bottom = 50.0
+rect_scale = Vector2( 0.8, 0.8 )
+focus_mode = 0
+custom_fonts/font = ExtResource( 4 )
+enabled_focus_mode = 0
+icon = ExtResource( 5 )
+flat = true
+
+[node name="Hit" type="Label" parent="MyCanvas/PlayUI/Hit"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 7 )
+custom_colors/font_color = Color( 1, 0.231373, 0.231373, 1 )
+text = "HIT!"
+align = 1
+valign = 1
+
+[node name="CurrentStreak" type="Label" parent="MyCanvas/PlayUI"]
+margin_top = 750.0
+margin_right = 1000.0
+margin_bottom = 851.0
+rect_rotation = -45.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 8 )
+text = "Current Streak: "
+valign = 1
+
+[node name="TimeLeft" type="Label" parent="MyCanvas/PlayUI"]
+margin_left = 535.0
+margin_top = 619.0
+margin_right = 733.0
+margin_bottom = 720.0
+rect_rotation = 45.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0.501961, 1, 0, 1 )
+text = "00:00"
+valign = 1
+
+[node name="BestStreak" type="Label" parent="MyCanvas/PlayUI"]
+margin_left = 35.0
+margin_top = 780.0
+margin_right = 1035.0
+margin_bottom = 881.0
+rect_rotation = -45.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 9 )
+text = "Best Streak: "
+valign = 1
+
+[node name="Score" type="Label" parent="MyCanvas/PlayUI"]
+anchor_right = 1.0
+margin_top = 20.0
+margin_bottom = 146.0
+custom_fonts/font = SubResource( 11 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="Life1" type="Sprite" parent="MyCanvas/PlayUI"]
+position = Vector2( 260, 200 )
+texture = ExtResource( 6 )
+
+[node name="Life2" type="Sprite" parent="MyCanvas/PlayUI"]
+position = Vector2( 360, 200 )
+texture = ExtResource( 6 )
+
+[node name="Life3" type="Sprite" parent="MyCanvas/PlayUI"]
+position = Vector2( 460, 200 )
+texture = ExtResource( 6 )
+
+[node name="Speedy" type="Sprite" parent="MyCanvas/PlayUI"]
+visible = false
+position = Vector2( 360, 500 )
+
+[node name="SpeedyNotify" type="Label" parent="MyCanvas/PlayUI/Speedy"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -351.0
+margin_top = -101.0
+margin_right = 349.0
+custom_fonts/font = SubResource( 13 )
+text = "Speedy Bonus!"
+align = 1
+valign = 1
+
+[node name="GameOverUI" type="Control" parent="MyCanvas"]
+editor/display_folded = true
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="GameOver" type="Sprite" parent="MyCanvas/GameOverUI"]
+position = Vector2( 360, 150 )
+
+[node name="GameOver" type="Label" parent="MyCanvas/GameOverUI/GameOver"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -361.0
+margin_top = -14.0
+margin_right = 359.0
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 14 )
+text = "Game Over"
+align = 1
+valign = 1
+
+[node name="Retry" type="Button" parent="MyCanvas/GameOverUI"]
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -225.0
+margin_top = -40.0
+margin_right = 225.0
+margin_bottom = 40.0
+flat = true
+
+[node name="ico" type="Sprite" parent="MyCanvas/GameOverUI/Retry"]
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="Retry" type="Label" parent="MyCanvas/GameOverUI/Retry"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+text = "Retry"
+align = 1
+valign = 1
+
+[node name="ToMenu" type="Button" parent="MyCanvas/GameOverUI"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -225.0
+margin_top = 110.0
+margin_right = 225.0
+margin_bottom = 190.0
+flat = true
+
+[node name="ico" type="Sprite" parent="MyCanvas/GameOverUI/ToMenu"]
+scale = Vector2( 1.5, 1 )
+texture = ExtResource( 7 )
+centered = false
+
+[node name="ToMenuLAbel" type="Label" parent="MyCanvas/GameOverUI/ToMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+text = "To Main Menu"
+align = 1
+valign = 1
+
+[node name="ScoreLabel" type="Label" parent="MyCanvas/GameOverUI"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -340.0
+margin_bottom = -239.0
+custom_fonts/font = SubResource( 15 )
+align = 1
+valign = 1
+
+[node name="GameOverBG" type="ColorRect" parent="MyCanvas/GameOverUI"]
+show_behind_parent = true
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.764706 )
+
+[node name="RotStart" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+
+[node name="SpeedyNotifyTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="BackWarning" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -293.0
+margin_top = -33.0
+margin_right = 289.0
+margin_bottom = 34.0
+custom_styles/normal = SubResource( 16 )
+custom_fonts/font = ExtResource( 8 )
+text = "Press Back again to Quit..."
+
+[node name="ExitTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="BreakTimer" to="." method="_on_BreakTimer_timeout"]
+[connection signal="timeout" from="UpDown" to="." method="_on_UpDown_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_StartTimer_timeout"]
+[connection signal="timeout" from="MyCanvas/PlayUI/MultiSprite/MultyRot" to="." method="_on_MultyRot_timeout"]
+[connection signal="pressed" from="MyCanvas/PlayUI/Eat" to="." method="_on_Eat_pressed"]
+[connection signal="pressed" from="MyCanvas/PlayUI/Hit" to="." method="_on_Hit_pressed"]
+[connection signal="pressed" from="MyCanvas/GameOverUI/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="MyCanvas/GameOverUI/ToMenu" to="." method="_on_Menu_pressed"]
+[connection signal="timeout" from="RotStart" to="." method="_on_RotStart_timeout"]
+[connection signal="timeout" from="SpeedyNotifyTimer" to="." method="_on_SpeedyNotifyTimer_timeout"]
+[connection signal="timeout" from="ExitTimer" to="." method="_on_ExitTimer_timeout"]

@@ -1,0 +1,76 @@
+,en,el,de
+PLAY,Play,Παίξε,Spielen
+SETTINGS,Customize,Επιλογές,Anpassen
+LEADERBOARD,Leaderboards,Πίνακες Ρεκόρ,Bestenlisten
+HIGHSCORE,High-Score: ,Ρεκόρ: ,Highscore: 
+HELP,Help,Βοήθεια,Hilfe
+ABOUT_US,- About Us -,- Η Ομάδα -,- Über Uns -
+PROGRAMMERS,"Programmers: Giannoudakis Angelo, Rigopoulos Dionisis, Papoutsidakis Thanasis","Προγραμματιστές: Γιαννουδάκης Άγγελος, Ρηγόπουλος Διονύσης, Παπουτσιδάκης Θανάσης","Programmierer: Giannoudakis Angelo, Rigopoulos Dionisis, Papoutsidakis Thanasis"
+ARTIST,Artist: Nikolelli Maria,Σχέδιο: Νικολέλλη Μαρία,Künstlerin: Nikolelli Maria
+AUDIO,Audio: Glarakis Spyros ,Ήχος: Γλαράκης Σπύρος,Audio: Glarakis Spyros 
+VISIT,"Visit us at nerfus.com or on social media #nerfusdev
+Copyright © 2019 – Nerf Us Entertainment","Βρείτε μας στο nerfus.com ή σε όλα τα social media #nerfusdev
+Copyright © 2019 – Nerf Us Entertainment","Folgen Sie uns in den sozialen Medien #nerfus
+
+Copyright © 2019 – Nerf Us Entertainment"
+SCORE,Your Score,Το Σκορ σου,Dein Ergebnis
+CONTINUE_HEAD,You collected: ,Σύλλεξες: ,Gesammelt: 
+CONTINUE_BUTTON,Continue: ,Συνέχισε:,Fortsetzen:
+RETRY,Retry,Ξαναπροσπάθησε,Wiederspielen
+TO MMENU,To Main Menu,Πίσω Στο Αρχικό Μενού,Zurück zum Hauptmenu
+WATCH_VIDEO,Watch A Video,Δες Ένα Video,Video angucken
+PAUSED_HEAD,Paused!,Παύση!,Pausiert!
+RESUME_BUTTON,Resume,Συνέχεια,Fortsetzen
+AUDIO_SETTING_ON,Audio: ON,Ήχος: Ναι,Audio: Ein
+AUDIO_SETTING_OFF,Audio: OFF,Ήχος: Όχι,Audio: Aus
+SKIN_EQUIPPED,Equipped,Επιλεγμένο,Ausgestattet
+SKIN_AVAILABLE,Equip,Διαθέσιμο,Verfügbar
+SKIN_LOCKED,Locked,Κλειδωμένο,Verschlossen
+BACK_BUTTON,Back,Πίσω,Zurück
+WISHES_NEEDED,Sugar needed,Χρειάζεται Ζάχαρη,Zucker benötigt
+GET_WISHES_MENU,Get More Sugar!,Απόκτησε περισσότερη Ζάχαρη!,Mehr Zucker bekommen!
+WATCH_VIDEO_MENU,Watch a Video to Get Sugar!,Δες ένα Video και Κέρδισε Ζάχαρη!,Gucke ein Video an und erhalte Zucker!
+JAR_1,,,
+JAR_2,,,
+JAR_3,,,
+JAR_4,,,
+USE,Use,Χρησιμοποίησε,Benutze 
+SUGAR,Sugar,Ζάχαρη,Zucker
+TAP_TO_CHOOSE,Tap to choose,Πάτησε για επιλογή,"Tippen, um auszuwählen"
+OR,or,ή,oder
+SPECIAL_THANKS,Special Thanks: ,Ευχαριστόυμε: ,Wir danken: 
+PURCHASED_SUC,Purchase Sucessful!,Αγορά Επιτυχής!,Kauf erfolgreich!
+PURCHASED_FAIL,Purchase Failed.,Η αγορά απέτυχε.,Kauf gescheitert.
+PURCHASED_CAN,Purchase Canceled.,Η αγορά ακυρώθηκε.,Kauf abgebrochen.
+LOADING,Loading...,Φόρτωση...,Wird geladen...
+ERROR,Error,Σφάλμα,Error
+SIGN_IN,"Signing in to Google Play, just a moment...","Γίνεται είσοδος στο Google Play, μια στιγμή...",Melden Sie sich bei Google Play an. Augenblick...
+VIDEO,Video available again in,Βίντεο διαθέσιμο ξανά σε,Video in
+MINUTES,minutes.,λεπτά.,Minuten wieder verfügbar.
+VIDEO_UNAVAILABLE,Video unavailable. Try again later.,Βίντεο μη διαθέσιμο. Δοκίμασε σε λίγο.,Video nicht verfügbar. Versuchen Sie wieder später.
+REWARD,Daily Reward!,Ημερίσιο Δώρο!,Tägliche Belohnung!
+REWARD_CD,Daily Reward available in,Το Ημερίσιο δώρο θα είναι διαθέσιμο σε,Die Tägliche Belohnung wird in
+HOURS,hours.,ώρες.,Uhr wieder verfügbar.
+SHOP,Shop,Κατάστημα,Laden
+START,START,ΞΕΚΙΝΗΣΕ,START
+EAT,EAT!,ΦΑΕ!,ISS!
+HIT,HIT!,ΧΤΥΠΑ!,SCHLAG!
+ASSETS_CREDIT,Assets used from: https://www.freepik.com,Assets χρησιμοποιήθηκαν από: https://www.freepik.com,Assets benutzt von: https://www.freepik.com
+LOGO_CREDIT,Logos used from: https://linkus.flamingtext.com/,Logos χρησιμοποιήθηκαν από: https://linkus.flamingtext.com/,Logos benutzt von: https://linkus.flamingtext.com/
+HOW_TO_PLAY,How to Play!,Πώς να Παίξεις!,Wie zu spielen!
+FIST_DESC,Your bare fist,Η γυμνή σου γροθιά,Deine nackte Faust
+FIST_BUFF,Nothing beats all natural!,Τίποτα δεν νικά την φυσική δύναμη!,Nichts besser als natürlich!
+HELP_TEXT,"Your goal is simple! EAT! Junk Food and HIT! Healthy Food! But be fast! Make the wrong choice or take too long and you lose one heart! Lose all your hearts and the game is over. But, if you are lucky, a heart will be served to replenish your lost ones!
+
+Have fun!","Ο στόχος σου είναι απλός! ΦΑΕ! το Junk Food και ΧΤΥΠΗΣΕ! κάθε τι υγειινό! Αλλά να είσαι γρήγορος! Κάνε λάθος επιλογή ή καθυστέρησε πολύ και θα χάσεις μια καρδιά! Άμα τις χάσεις όλες, το παιχνίδι τελειώνει. Άν είσαι τυχερός, μια καρδιά θα σου σερβιριστεί για να αναπληρώσεις τις χαμένες!
+
+Καλή διασκέδαση!","Dein Ziel ist einfach! ISS! Junk Food und SCHLAG! gesundes Essen! Aber sei schnell! Jede falsche oder langsame Wahl kostet dir einen Herz! Wenn alle Herze gelöscht sind, ist das Spiel vorbei! Wenn Sie Glücklich sind, wird Ihnen ein Herz bekommt!
+
+Viel Spaß!"
+CURRENT_STREAK,Current Streak: ,Τρέχον Σερί: ,Aktuelle Serie: 
+BEST_STREAK,Best Streak: ,Καλύτερο Σερί: ,Beste Serie: 
+BUY,Buy,Αγόρασε,Kaufen
+SPEEDY,Speedy,Γρήγορος,Schnell
+SWIFT,Swift,Αστραπή,Sehr schnell
+BONUS,bonus!,μπόνους!,Bonus!
+GAME_OVER,Game Over!,Τέλος Παιχνιδιού!,Spiel vorbei!
